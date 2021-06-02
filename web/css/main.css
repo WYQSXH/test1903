@@ -1,0 +1,48 @@
+.main {
+	margin: 1px;
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* 中间 */
+.content {
+	flex: 5;
+	/* background-color: rgba(75, 75, 112, 0.8); */
+	background-color: rgba(1, 182, 227, 0.6);
+	backdrop-filter: blur( 20px );
+	-webkit-backdrop-filter: blur( 20px );
+	/* display: none; */
+	/*max-height: 425px;*/
+	/*overflow: auto;*/
+}
+.content ul,
+.main-content-div{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid #b5b5b5;
+	color: #d9d9d9;
+	font-size: 20px;
+	padding: 0px;
+}
+.content ul:not(:first-child):hover{
+	background-color: rgba(1, 182, 227, 0.9);
+} 
+.content ul:first-child {
+	
+}
+.content ul li{
+	text-align: center;
+	flex:1;
+}
+.content ul li img{
+	width: 40%;
+	height: 40%;
+	border-radius: 50%;
+}
+.content ul li audio{
+	opacity: 0.5;
+}

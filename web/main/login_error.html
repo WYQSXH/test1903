@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>登录</title>
+    <script src="/Demo13Web/js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/Demo13Web/js/login.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="/Demo13Web/css/login.css" />
+</head>
+<body>
+<form action="/Demo13Web/user/login" method="post">
+    <div id="mk">
+    </div>
+    <div class="login">
+        <h1 style="color:#ff4438;font-size: 30px">身份不合法,请重新登录</h1>
+        <div class="login_box">
+            <input type="text" required="required" id="loginName" name="loginName"/>
+            <label for="loginName"> 用户名</label>
+        </div>
+        <div class="login_box">
+            <input type="password" required="required" id="password" name="password"/>
+            <label for="password">密码</label>
+        </div>
+        <div class="submit_box">
+            <input type="submit" value="登录" class="submit" name="submit"/>
+        </div>
+        <div class="goRegister_box">
+            <a href="/Demo13Web/main/register.html">没有账号去注册--></a>
+        </div>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,84 @@
+.bg-mask {
+	height: 100%;
+	width: 100%;
+	background: url(../images/搜索背景2.png) center center no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+	filter: blur(2px);
+	position:fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+ /* 虚化层 */
+.layer {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(175, 175, 175, 0.5);
+	backdrop-filter: blur(20px);
+	z-index: 2;
+}
+/* 搜索栏 */
+.search {
+	width: 1140px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	position: relative;
+	z-index: 3;
+}
+
+.inputsearch {
+	position: absolute;
+	top: 30px;
+	width: 550px;
+	height: 120px;
+	opacity: 0.8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	z-index: 3;
+	background: rgba(255, 255, 255, 0.35);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	box-shadow: 0 2px 10px 0 #0eb8da;
+}
+
+.inputsearch :hover {
+	animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	box-shadow: 10px 0 50px rgba(255, 0, 127, 0.7);
+
+}
+
+.inputsearch input {
+	/* 清除input自带的边框 */
+	outline: none;
+	border: none;
+	padding: 10px;
+}
+
+#textbooksearcg {
+	width: 350px;
+	height: 40px;
+	margin-right: -2px;
+	border: 1px solid black;
+	border-radius: 10px 0px 0px 10px;
+}
+
+#btnbooksearcg {
+	width: 80px;
+	height: 40px;
+	margin-left: -2px;
+	background-color: #3498DB;
+	color: #ffffff;
+	border: 1px solid black;
+	border-left: 0px;
+	border-radius: 5px 50px 50px 0px;
+}

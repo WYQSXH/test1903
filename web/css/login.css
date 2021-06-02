@@ -1,0 +1,121 @@
+*{
+	margin: 0 auto;
+	padding: 0 auto;
+	/* 盒子模型 */
+	box-sizing: border-box;
+}
+body{
+	/* 弹性布局，让页面元素垂直+水平居中 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* 让页面始终站浏览器可视区域总高度 */
+	height: 100vh;
+	/* background: linear-gradient(#141e30,#243b55); */
+}
+#mk{
+	 /*需设置position属性才不会覆盖其他元素*/
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 720px;
+	background-image: url(../images/login.png);
+	filter: blur( 6.0px );
+} 
+.login{
+	/* 弹性布局，让子元素成为弹性项目 */
+	display: flex;
+	/* 让弹性项目垂直居中排列，改变主轴方向 */
+	flex-direction:column;
+	align-items: center;
+	
+	width:400px;
+	padding: 40px;
+	background: rgba( 255, 255, 255, 0.25 );
+	box-shadow: 0 10px 32px 0 rgba(255, 255, 255, 0.4);
+	backdrop-filter: blur( 10px );
+	-webkit-backdrop-filter: blur( 10px );
+	border-radius: 10px;
+}
+.login h1{
+	color: #fff;
+	margin-bottom: 30px;
+}
+.login .login_box{
+	position: relative;
+	width: 100%;
+}
+.login .login_box input{
+	/* 清除input自带的边框 */
+	outline: none;
+	border: none;
+	width: 100%;
+	padding: 10px 0;
+	margin-bottom: 30px;
+	color: #fff;
+	font-size: 16px;
+	border-bottom: 1px solid #fff;
+	/* 设置背景颜色为透明色 */
+	background-color: transparent;
+}
+.login .login_box label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	color:#fff;
+	/* 这个属性默认元素是auto，默认是这个元素可以被点击，设置为none就是设置该元素不能被点击 */
+	pointer-events:none;
+	/* 加个过渡 */
+	transition: all 0.5s;
+}
+/* :focus选择器是当input获得焦点时出发的样式 + 是相邻兄弟选择器，去找与input相邻的兄弟label 
+	:valid选择器判断input框的内容是否合法，如果合法会执行下面的属性代码，不合法就不执行
+		刚开始写布局时给input写了required（必填项）当input为空时不合法，则不执行下面代码。*/
+.login .login_box input:focus + label,
+.login .login_box input:valid + label {
+	top: -20px;
+	color: #43ffdf;
+	font-size: 14px;
+}
+
+.login .submit_box .submit{
+	/* 清除input自带的边框 */
+	outline: none;
+	border: none;
+	width: 100%;
+	color: #036edc;
+	font-size: 16px;
+	/* 设置背景颜色为透明色 */
+	background-color: transparent;
+}
+.login .submit_box{
+	overflow: hidden;
+	position: relative;
+	padding: 10px 20px;
+	color: #0385ff;
+	background-color: pink;
+	border-radius: 5px;
+	text-decoration: none;
+	/* 加个过渡 */
+	transition: all 0.5s;
+}
+.login .submit_box:hover{
+	color: #fff;
+	border-radius: 10px;
+	background-color: #01d1d4;
+	box-shadow: 0 0 5px #01d1d4 ,
+	 0 0 25px #01d1d4,
+	 0 0 50px #01d1d4,
+	 0 0 100px #01d1d4;
+}
+
+.goRegister_box{
+	margin-top: 20px;
+}
+.goRegister_box a{
+	font-style: oblique ;
+	color: #c1c0c3;
+	text-decoration:none
+}

@@ -1,0 +1,43 @@
+.footer{
+	width: 100%;
+	height: 50px;
+	/* background-color: rgba(0, 0, 112, 0.9); */
+	background-color: rgba(240, 243, 255, 0.7);
+	position:fixed; 
+	left:0px; 
+	bottom:0px;
+	z-index:999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer img{
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 50px;
+	height: 50px;
+}
+.footer div{
+	
+}
+.musiclogo1{
+	height: 50px;
+	width: 100px;
+}
+.musiclogo2{
+	width: 700px;
+	display: flex;
+}
+#myaudio{
+	margin-top: 5px;
+	width: 400px;
+	height: 40px;
+	opacity: 0.5;
+}
+.goTop{
+	position:fixed; 
+	right:10px; 
+	bottom:100px;
+	z-index:999;
+	border-radius: 50%;
+}

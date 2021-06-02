@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <!--这里的 路径地址需要跟着 网站名/具体地址-->
+    <script src="/Demo13Web/js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/Demo13Web/js/register.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="/Demo13Web/css/register.css" />
+</head>
+<body>
+    <form action="/Demo13Web/user/register" method="post">
+        <div id="mk">
+        </div>
+        <div class="register">
+            <h1>用户注册</h1>
+            <div class="register_box">
+                <!-- autocomplete="off" 是去掉输入框的提示信息；required="required"是表示必填项-->
+                <input type="text" autocomplete="off" required="required" id="loginName" name="loginName"/>
+                <label for="loginName"> 账号(必须是9位数字)</label>
+            </div>
+            <div class="register_box">
+                <input type="text" autocomplete="off" required="required" id="userName" name="userName"/>
+                <label for="userName"> 用户名</label>
+            </div>
+            <div class="register_box">
+                <input type="password" required="required" id="password" name="password"/>
+                <label for="password">密码</label>
+            </div>
+            <div class="register_box">
+                <input type="password" required="required" id="passwordagain" name="passwordagain"/>
+                <label for="passwordagain">确认密码</label>
+            </div>
+            <div class="register_box">
+                <span> 性别:</span>
+                <input type="radio" name="sex" value="男">
+                <span> 男</span>
+                <input type="radio" name="sex" value="女">
+                <span> 女</span>
+            </div>
+            <div class="register_box">
+                <input type="email" required="required" id="email" name="email"/>
+                <label for="email"> 邮箱</label>
+            </div>
+            <div class="submit_box">
+                <input type="submit" value="注册" class="submit" name="submit"/>
+            </div>
+            <div class="goLogin_box">
+                <a href="/Demo13Web/main/login.html">已有帐号去登陆--></a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

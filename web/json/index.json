@@ -1,0 +1,32 @@
+[
+	{
+		"name": "泡沫 - G.E.M.邓紫棋",
+		"imgsrc": "../music/泡沫/泡沫.png",
+		"musicsrc":"../music/泡沫/泡沫.mp3"
+	},
+	{
+		"name": "勇气 - 梁静茹",
+		"imgsrc": "../music/勇气/勇气.png",
+		"musicsrc":"../music/勇气/勇气.mp3"
+	},
+	{
+		"name": "告白气球 - 周杰伦",
+		"imgsrc": "../music/告白气球/告白气球.png",
+		"musicsrc":"../music/告白气球/告白气球.mp3"
+	},
+	{
+		"name": "稻香 - 周杰伦",
+		"imgsrc": "../music/稻香/稻香.png",
+		"musicsrc":"../music/稻香/稻香.mp3"
+	},
+	{
+		"name": "倒数 - G.E.M.邓紫棋",
+		"imgsrc": "../music/倒数/倒数.png",
+		"musicsrc":"../music/倒数/倒数.mp3"
+	},
+	{
+		"name": "来自天堂的魔鬼 - G.E.M.邓紫棋",
+		"imgsrc": "../music/来自天堂的魔鬼/来自天堂的魔鬼.png",
+		"musicsrc":"../music/来自天堂的魔鬼/来自天堂的魔鬼.mp3"
+	}
+]

@@ -1,0 +1,30 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.nav{
+	background-color: #2b2d6a;
+}
+.nav :last-child{
+	display: flex;
+}
+.nav-ul{
+	padding: 0px;
+	height: 30px;
+}
+.nav-ul .nav-li{
+	text-align: center;
+	height: 30px;
+}
+.nav-ul .nav-li a {
+	text-align: center;
+	line-height: 36px;
+	font-size: 20px;
+	text-decoration:none;
+	color: #d5d5d5;
+}
+.nav-ul .nav-li img{
+	margin-top: 5px;
+	margin-left: 25px;
+}
